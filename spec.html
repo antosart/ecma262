@@ -14347,7 +14347,7 @@
               1. Perform ! _map_.[[Delete]](_P_).
             1. Else,
               1. If _Desc_ has a [[Value]] field, then
-                1. Assert: Formal parameters mapped by arguments objects are always writable.
+                1. Assert: The following Set will succeed, since formal parameters mapped by arguments objects are always writable.
                 1. Perform ! Set(_map_, _P_, _Desc_.[[Value]], *false*).
               1. If _Desc_ has a [[Writable]] field and _Desc_.[[Writable]] is *false*, then
                 1. Perform ! _map_.[[Delete]](_P_).
@@ -14396,7 +14396,7 @@
             1. Let _map_ be _args_.[[ParameterMap]].
             1. Let _isMapped_ be ! HasOwnProperty(_map_, _P_).
           1. If _isMapped_ is *true*, then
-            1. Assert: Formal parameters mapped by arguments objects are always writable.
+            1. Assert: The following Set will succeed, since formal parameters mapped by arguments objects are always writable.
             1. Perform ! Set(_map_, _P_, _V_, *false*).
           1. Return ? OrdinarySet(_args_, _P_, _V_, _Receiver_).
         </emu-alg>
