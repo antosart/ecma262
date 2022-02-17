@@ -955,13 +955,13 @@
 
       <emu-clause id="sec-implicit-normal-completion" oldids="sec-implicit-completion-values">
         <h1>Implicit Normal Completion</h1>
-        <p>In algorithms within abstract operations which are declared to return a Completion Record, the returned value is first passed to NormalCompletion, and the result is used instead. This rule does not apply within the Completion algorithm or when the value being returned is clearly marked as a Completion Record in that step; these cases are:</p>
+        <p>In algorithms within abstract operations which are declared to return a Completion Record, within the Evaluation syntax-directed operation, and within all built-in functions, the returned value is first passed to NormalCompletion, and the result is used instead. This rule does not apply within the Completion algorithm or when the value being returned is clearly marked as a Completion Record in that step; these cases are:</p>
         <ul>
           <li>when the result of applying Completion, NormalCompletion, or ThrowCompletion is directly returned</li>
           <li>when the result of constructing a Completion Record is directly returned</li>
           <li>when directly returning with the phrase "the result of evaluating"</li>
         </ul>
-        <p>The Evaluation syntax-directed operation and all built-in functions return a Completion Record. It is an editorial error if a Completion Record is returned from such an abstract operation through any other means. For example, within these abstract operations,</p>
+        <p>It is an editorial error if a Completion Record is returned from such an abstract operation through any other means. For example, within these abstract operations,</p>
         <emu-alg example>
           1. Return *true*.
         </emu-alg>
