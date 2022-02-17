@@ -14119,7 +14119,7 @@
         </dl>
         <emu-alg>
           1. If _Desc_ does not have a [[Value]] field, then
-            1. Return ? OrdinaryDefineOwnProperty(_A_, *"length"*, _Desc_).
+            1. Return ! OrdinaryDefineOwnProperty(_A_, *"length"*, _Desc_).
           1. Let _newLenDesc_ be a copy of _Desc_.
           1. [id="step-arraysetlength-newlen"] Let _newLen_ be ? ToUint32(_Desc_.[[Value]]).
           1. [id="step-arraysetlength-numberlen"] Let _numberLen_ be ? ToNumber(_Desc_.[[Value]]).
@@ -14130,7 +14130,7 @@
           1. Assert: _oldLenDesc_.[[Configurable]] is *false*.
           1. Let _oldLen_ be _oldLenDesc_.[[Value]].
           1. If _newLen_ &ge; _oldLen_, then
-            1. Return ? OrdinaryDefineOwnProperty(_A_, *"length"*, _newLenDesc_).
+            1. Return ! OrdinaryDefineOwnProperty(_A_, *"length"*, _newLenDesc_).
           1. If _oldLenDesc_.[[Writable]] is *false*, return *false*.
           1. If _newLenDesc_ does not have a [[Writable]] field or _newLenDesc_.[[Writable]] is *true*, let _newWritable_ be *true*.
           1. Else,
