@@ -9547,7 +9547,7 @@
         1. Let _iteratorRecord_ be ? GetIterator(_value_).
         1. Let _result_ be Completion(IteratorBindingInitialization of |ArrayBindingPattern| with arguments _iteratorRecord_ and _environment_).
         1. If _iteratorRecord_.[[Done]] is *false*, return ? IteratorClose(_iteratorRecord_, _result_).
-        1. Return _result_.
+        1. Return ? _result_.
       </emu-alg>
       <emu-grammar>ObjectBindingPattern : `{` `}`</emu-grammar>
       <emu-alg>
@@ -21742,7 +21742,7 @@
           1. If _isConst_ is *false*, let _perIterationLets_ be _boundNames_; otherwise let _perIterationLets_ be &laquo; &raquo;.
           1. Let _bodyResult_ be Completion(ForBodyEvaluation(the first |Expression|, the second |Expression|, |Statement|, _perIterationLets_, _labelSet_)).
           1. Set the running execution context's LexicalEnvironment to _oldEnv_.
-          1. Return _bodyResult_.
+          1. Return ? _bodyResult_.
         </emu-alg>
       </emu-clause>
 
