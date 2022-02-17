@@ -4893,7 +4893,7 @@
       <h1>
         ToNumeric (
           _value_: unknown,
-        ): either a normal completion containing either a Number or a BigInt or an abrupt completion
+        ): either a normal completion containing either a Number or a BigInt, or an abrupt completion
       </h1>
       <dl class="header">
         <dt>description</dt>
@@ -5150,7 +5150,7 @@
       <h1>
         ToIntegerOrInfinity (
           _argument_: an ECMAScript language value,
-        ): either a normal completion containing either an integer, +&infin;, or -&infin; or an abrupt completion
+        ): either a normal completion containing either an integer, +&infin;, or -&infin;, or an abrupt completion
       </h1>
       <dl class="header">
         <dt>description</dt>
@@ -6103,7 +6103,7 @@
           _x_: an ECMAScript language value,
           _y_: an ECMAScript language value,
           _LeftFirst_: a Boolean,
-        ): either a normal completion containing either a Boolean or *undefined* or an abrupt completion
+        ): either a normal completion containing either a Boolean or *undefined*, or an abrupt completion
       </h1>
       <dl class="header">
         <dt>description</dt>
@@ -6428,7 +6428,7 @@
         GetMethod (
           _V_: an ECMAScript language value,
           _P_: a property key,
-        ): either a normal completion containing either a function object or *undefined* or an abrupt completion
+        ): either a normal completion containing either a function object or *undefined*, or an abrupt completion
       </h1>
       <dl class="header">
         <dt>description</dt>
@@ -7079,7 +7079,7 @@
       <h1>
         IteratorStep (
           _iteratorRecord_: an Iterator Record,
-        ): either a normal completion containing either an Object or *false* or an abrupt completion
+        ): either a normal completion containing either an Object or *false*, or an abrupt completion
       </h1>
       <dl class="header">
         <dt>description</dt>
@@ -10732,7 +10732,7 @@
         </emu-clause>
 
         <emu-clause id="sec-getsuperbase" type="concrete method">
-          <h1>GetSuperBase ( ): either a normal completion containing either an Object, *null*, or *undefined* or an abrupt completion</h1>
+          <h1>GetSuperBase ( ): either a normal completion containing either an Object, *null*, or *undefined*, or an abrupt completion</h1>
           <dl class="header">
             <dt>for</dt>
             <dd>a function Environment Record _envRec_</dd>
@@ -14872,7 +14872,7 @@
         <h1>
           [[GetOwnProperty]] (
             _P_: a property key,
-          ): either a normal completion containing either a Property Descriptor or *undefined* or an abrupt completion
+          ): either a normal completion containing either a Property Descriptor or *undefined*, or an abrupt completion
         </h1>
         <dl class="header">
           <dt>for</dt>
@@ -15207,7 +15207,7 @@
     <p>In the following algorithm descriptions, assume _O_ is an ECMAScript Proxy object, _P_ is a property key value, _V_ is any ECMAScript language value and _Desc_ is a Property Descriptor record.</p>
 
     <emu-clause id="sec-proxy-object-internal-methods-and-internal-slots-getprototypeof" type="internal method">
-      <h1>[[GetPrototypeOf]] ( ): either a normal completion containing either an Object or *null* or an abrupt completion</h1>
+      <h1>[[GetPrototypeOf]] ( ): either a normal completion containing either an Object or *null*, or an abrupt completion</h1>
       <dl class="header">
         <dt>for</dt>
         <dd>a Proxy exotic object _O_</dd>
@@ -15349,7 +15349,7 @@
       <h1>
         [[GetOwnProperty]] (
           _P_: a property key,
-        ): either a normal completion containing either a Property Descriptor or *undefined* or an abrupt completion
+        ): either a normal completion containing either a Property Descriptor or *undefined*, or an abrupt completion
       </h1>
       <dl class="header">
         <dt>for</dt>
@@ -20496,7 +20496,7 @@
           _lval_: an ECMAScript language value,
           _opText_: `**`, `*`, `/`, `%`, `+`, `-`, `&lt;&lt;`, `&gt;&gt;`, `&gt;&gt;&gt;`, `&amp;`, `^`, or `|`,
           _rval_: an ECMAScript language value,
-        ): either a normal completion containing either a String, a BigInt, or a Number or an abrupt completion
+        ): either a normal completion containing either a String, a BigInt, or a Number, or an abrupt completion
       </h1>
       <dl class="header">
       </dl>
@@ -20562,7 +20562,7 @@
           _leftOperand_: a Parse Node,
           _opText_: a sequence of Unicode code points,
           _rightOperand_: a Parse Node,
-        ): either a normal completion containing either a String, a BigInt, or a Number or an abrupt completion
+        ): either a normal completion containing either a String, a BigInt, or a Number, or an abrupt completion
       </h1>
       <dl class="header">
       </dl>
@@ -23662,7 +23662,7 @@
         Runtime Semantics: MethodDefinitionEvaluation (
           _object_: unknown,
           _enumerable_: unknown,
-        ): either a normal completion containing either a PrivateElement or ~unused~ or an abrupt completion
+        ): either a normal completion containing either a PrivateElement or ~unused~, or an abrupt completion
       </h1>
       <dl class="header">
       </dl>
@@ -24707,7 +24707,7 @@
       <h1>
         Runtime Semantics: ClassElementEvaluation (
           _object_: unknown,
-        ): either a normal completion containing either a ClassFieldDefinition Record, a ClassStaticBlockDefinition Record, a Private Name, or ~unused~ or an abrupt completion
+        ): either a normal completion containing either a ClassFieldDefinition Record, a ClassStaticBlockDefinition Record, a Private Name, or ~unused~, or an abrupt completion
       </h1>
       <dl class="header">
       </dl>
@@ -27573,7 +27573,7 @@
           <h1>
             GetExportedNames (
               optional _exportStarSet_: a List of Source Text Module Records,
-            ): either a normal completion containing a List of either Strings or *null* or an abrupt completion
+            ): either a normal completion containing a List of either Strings or *null*, or an abrupt completion
           </h1>
           <dl class="header">
             <dt>for</dt>
@@ -27611,7 +27611,7 @@
             ResolveExport (
               _exportName_: a String,
               optional _resolveSet_: a List of Records that have [[Module]] and [[ExportName]] fields,
-            ): either a normal completion containing either a ResolvedBinding Record, *null*, or ~ambiguous~ or an abrupt completion
+            ): either a normal completion containing either a ResolvedBinding Record, *null*, or ~ambiguous~, or an abrupt completion
           </h1>
           <dl class="header">
             <dt>for</dt>
@@ -27895,7 +27895,7 @@
         <h1>
           GetModuleNamespace (
             _module_: an instance of a concrete subclass of Module Record,
-          ): either a normal completion containing either a Module Namespace Object or ~empty~ or an abrupt completion
+          ): either a normal completion containing either a Module Namespace Object or ~empty~, or an abrupt completion
         </h1>
         <dl class="header">
           <dt>description</dt>
@@ -36059,7 +36059,7 @@ THH:mm:ss.sss
             RegExpExec (
               _R_: an Object,
               _S_: a String,
-            ): either a normal completion containing either an Object or *null* or an abrupt completion
+            ): either a normal completion containing either an Object or *null*, or an abrupt completion
           </h1>
           <dl class="header">
           </dl>
@@ -36082,7 +36082,7 @@ THH:mm:ss.sss
             RegExpBuiltinExec (
               _R_: an initialized RegExp instance,
               _S_: a String,
-            ): either a normal completion containing either an Array exotic object or *null* or an abrupt completion
+            ): either a normal completion containing either an Array exotic object or *null*, or an abrupt completion
           </h1>
           <dl class="header">
           </dl>
@@ -36182,7 +36182,7 @@ THH:mm:ss.sss
             RegExpHasFlag (
               _R_: an ECMAScript language value,
               _codeUnit_: a code unit,
-            ): either a normal completion containing either a Boolean or *undefined* or an abrupt completion
+            ): either a normal completion containing either a Boolean or *undefined*, or an abrupt completion
           </h1>
           <dl class="header">
           </dl>
@@ -41054,7 +41054,7 @@ THH:mm:ss.sss
             _requestIndex_: unknown,
             _isLittleEndian_: unknown,
             _type_: unknown,
-          ): either a normal completion containing either a Number or a BigInt or an abrupt completion
+          ): either a normal completion containing either a Number or a BigInt, or an abrupt completion
         </h1>
         <dl class="header">
           <dt>description</dt>
@@ -41456,7 +41456,7 @@ THH:mm:ss.sss
           ValidateIntegerTypedArray (
             _typedArray_: unknown,
             optional _waitable_: a Boolean,
-          ): either a normal completion containing either an ArrayBuffer or a SharedArrayBuffer or an abrupt completion
+          ): either a normal completion containing either an ArrayBuffer or a SharedArrayBuffer, or an abrupt completion
         </h1>
         <dl class="header">
         </dl>
@@ -41660,7 +41660,7 @@ THH:mm:ss.sss
             _index_: unknown,
             _value_: unknown,
             _op_: a read-modify-write modification function,
-          ): either a normal completion containing either a Number or a BigInt or an abrupt completion
+          ): either a normal completion containing either a Number or a BigInt, or an abrupt completion
         </h1>
         <dl class="header">
           <dt>description</dt>
@@ -42150,7 +42150,7 @@ THH:mm:ss.sss
             _state_: unknown,
             _key_: unknown,
             _holder_: unknown,
-          ): either a normal completion containing either *undefined* or a String or an abrupt completion
+          ): either a normal completion containing either *undefined* or a String, or an abrupt completion
         </h1>
         <dl class="header">
         </dl>
@@ -44582,7 +44582,7 @@ THH:mm:ss.sss
           GeneratorValidate (
             _generator_: unknown,
             _generatorBrand_: unknown,
-          ): either a normal completion containing either ~suspendedStart~, ~suspendedYield~, or ~completed~ or an abrupt completion
+          ): either a normal completion containing either ~suspendedStart~, ~suspendedYield~, or ~completed~, or an abrupt completion
         </h1>
         <dl class="header">
         </dl>
